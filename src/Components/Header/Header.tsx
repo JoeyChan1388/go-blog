@@ -16,7 +16,7 @@ const Header = () => {
         <h1 className="title"> Joey's Blog</h1>
       </div>
       <div className="header__right">
-        <Link to='/'>About</Link>
+        <Link to='/about/'>About</Link>
         {user.name ? (
           <>
             <p>{user.name}</p>
