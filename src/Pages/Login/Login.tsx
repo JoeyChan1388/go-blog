@@ -2,19 +2,22 @@ import React from "react";
 import "./Login.css";
 import { useDispatch, useSelector } from "react-redux";
 import { login, selectUser } from "../../features/userSlice";
+import { useNavigate, Link } from "react-router-dom";
 
 const Login = () => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
+  const navigate = useNavigate();
+  
   let signin = true;
 
   if (user.name !== "" || user == null) {
-    window.location.href = "http://localhost:3000/";
+    navigate("/my-blog/");
   }
 
   const handleLoginSubmit = () => {
     let userName: string = (
-      
+
       document.getElementById("username") as HTMLInputElement
     ).value;
     let password: string = (
@@ -42,7 +45,7 @@ const Login = () => {
                 login({ id: data.user_id, name: data.user_displayname })
               );
               //redirect to home page
-              window.location.href = "http://localhost:3000/";
+              navigate("/my-blog/");
             } else {
               alert("Invalid username or password");
             }
@@ -83,7 +86,7 @@ const Login = () => {
                 login({ id: data.user_id, name: data.user_displayname })
               );
               //redirect to home page
-              window.location.href = "http://localhost:3000/";
+              navigate("/my-blog/");
             } else {
               alert("Invalid username or password");
             }
@@ -146,7 +149,6 @@ const Login = () => {
               <input type="password" name="password" id="password" />
             </div>
 
-            <a href="/signup">Need Account?</a>
             <button
               className="login-button"
               onClick={handleLoginSubmit}
@@ -176,7 +178,7 @@ const Login = () => {
               <input type="password" name="password" id="signup-password" />
             </div>
 
-            <a href="/signup">Need Account?</a>
+            <Link to="go-blog/signup">Need Account?</Link>
             <button
               className="login-button"
               onClick={handleSignupSubmit}

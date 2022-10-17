@@ -5,8 +5,10 @@ import "./Feed.css";
 
 import { selectUser } from "../../features/userSlice";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Feed = () => {
+  const navigate = useNavigate();
   interface BlogPost {
     postid: number;
     posterID: number;
@@ -60,7 +62,7 @@ const Feed = () => {
             {user.name ? (
               <button
                 className="btn--primary"
-                onClick={() => (window.location.href = "/posts/create")}
+                onClick={() => (navigate("my-blog/posts/create"))}
               >
                 Create Post
               </button>

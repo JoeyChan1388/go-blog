@@ -3,10 +3,12 @@ import "./Header.css";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, selectUser } from "../../features/userSlice";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
+  const navigate = useNavigate();
 
   return (
     <div className="header">
@@ -23,7 +25,7 @@ const Header = () => {
         ) : (
           <button
             onClick={() =>
-              (window.location.href = "http://localhost:3000/signin")
+              navigate("/my-blog/signin")
             }
           >
             Sign in

@@ -2,9 +2,11 @@ import React from 'react'
 import './AddPostForm.css'
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/userSlice";
+import { useNavigate } from 'react-router-dom';
 
 const AddPostForm = () => {
   const user = useSelector(selectUser);
+  const navigate = useNavigate();
 
   const submitPost = () => {
     let title = (document.getElementById('postTitle') as HTMLInputElement).value
@@ -28,7 +30,7 @@ const AddPostForm = () => {
     }).catch((error) => {
       console.log(error)
     }).finally(() => {
-      window.location.href = '/'
+      navigate('/my-blog/')
     })
   }
 

@@ -3,6 +3,7 @@ import "./Post.css";
 import image from "../../img/placeholder.jpeg";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/userSlice";
+import { Link } from "react-router-dom";
 
 const Post = (props: {
   postid: number;
@@ -44,14 +45,14 @@ const Post = (props: {
         </div>
 
         <div className="post__left__bottom">
-          <a href={`/post/${props.postid}`}>
+          <Link to={`/post/${props.postid}`}>
             <button className="btn--primary">View Post</button>
-          </a>
+          </Link>
           {user.id === props.posterID ? (
             <>
-            <a href={`/post/${props.postid}/edit`}>
+            <Link to={`/post/${props.postid}/edit`}>
               <button className="btn--secondary">Edit Post</button>
-            </a>
+            </Link>
             <button onClick={() => deletePost(props.postid)} className="btn--danger">Delete Post</button>
             </>
             

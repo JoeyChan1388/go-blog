@@ -2,10 +2,12 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/userSlice";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const PostEdit = () => {
   const user = useSelector(selectUser);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   console.log(id);
   useEffect(() => {
@@ -51,7 +53,7 @@ const PostEdit = () => {
         console.log(error);
       })
       .finally(() => {
-        window.location.href = "/";
+        navigate('/my-blog/')
       });
   };
 

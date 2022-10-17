@@ -20,11 +20,11 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/post/:id" element={<PostView />} />
-          <Route path="/posts/create" element={<PostCreate />} />
-          <Route path="/post/:id/edit" element={<PostEdit />} />
-          <Route path="/signin" element={<Login />} />
-          <Route path="/" element={<Feed />} />
+          <Route path="my-blog/post/:id" element={<PostView />} />
+          <Route path="my-blog/posts/create" element={<PostCreate />} />
+          <Route path="my-blog/post/:id/edit" element={<PostEdit />} />
+          <Route path="my-blog/signin" element={<Login />} />
+          <Route path="my-blog/" element={<Feed />} />
         </Routes>
       </BrowserRouter>
     </div>
