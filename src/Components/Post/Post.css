@@ -1,0 +1,115 @@
+.post {
+  min-height: 75px;
+  padding: 50px 10px;
+  border-bottom: rgb(87, 202, 72) 4px solid;
+  width: 100%;
+  height: fit-content;
+  /* max-height: 200px; */
+  margin-bottom: 10px;
+  color: rgb(87, 202, 72);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.post--reversed {
+  flex-direction: row-reverse;
+}
+
+.post--reversed .post__left .post__left__top {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.post--reversed .post__left .post__left__bottom {
+   text-align: right;
+}
+
+.post__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.post__left__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.post__left__top > * {
+  margin: 10px 0 0 0;
+}
+
+.post__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post__right__image {
+  width: 75%;
+  height: auto;
+}
+
+.post h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.post h4 {
+  font-size: 1.2rem;
+  color: green;
+  font-weight: 500;
+}
+
+.post p {
+  color: black;
+  max-width: 70%;
+}
+
+.post a {
+  width: fit-content;
+}
+
+.btn--primary {
+  background: rgb(87, 202, 72);
+  border: 2px solid rgb(87, 202, 72);
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.1rem;
+}
+
+.btn--secondary {
+  background: none;
+  border: rgb(87, 202, 72) 2px solid;
+  border-radius: 5px;
+  color: rgb(87, 202, 72);
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.1rem;
+}
+
+.btn--danger {
+  background: none;
+  border: 2px solid red;
+  border-radius: 5px;
+  color: red;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.1rem;
+}

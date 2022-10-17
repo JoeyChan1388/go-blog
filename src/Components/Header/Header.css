@@ -1,0 +1,52 @@
+.header {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.title {
+    font-size: 35px;
+    color: rgba(21, 109, 37, 0.629);
+    font-weight: 100;
+}
+
+.header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    color: rgba(21, 109, 37, 0.629);
+    font-size: 20px;
+}
+
+.header__right > * {
+    margin-left: 40px;
+}
+
+.header__right > a {
+    color: rgba(21, 109, 37, 0.629);
+}
+
+.header__right > button {
+    background-color: rgba(21, 109, 37, 0.629);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
