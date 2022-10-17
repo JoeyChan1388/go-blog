@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/go-blog/static/css/main.045ee43d.css",
+    "main.js": "/go-blog/static/js/main.3c824d5b.js",
+    "index.html": "/go-blog/index.html",
+    "main.045ee43d.css.map": "/go-blog/static/css/main.045ee43d.css.map",
+    "main.3c824d5b.js.map": "/go-blog/static/js/main.3c824d5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.045ee43d.css",
+    "static/js/main.3c824d5b.js"
+  ]
+}
