@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/go-blog/static/css/main.045ee43d.css",
-    "main.js": "/go-blog/static/js/main.3c824d5b.js",
-    "index.html": "/go-blog/index.html",
-    "main.045ee43d.css.map": "/go-blog/static/css/main.045ee43d.css.map",
-    "main.3c824d5b.js.map": "/go-blog/static/js/main.3c824d5b.js.map"
+    "main.css": "/my-blog/static/css/main.045ee43d.css",
+    "main.js": "/my-blog/static/js/main.f2d8458c.js",
+    "index.html": "/my-blog/index.html",
+    "main.045ee43d.css.map": "/my-blog/static/css/main.045ee43d.css.map",
+    "main.f2d8458c.js.map": "/my-blog/static/js/main.f2d8458c.js.map"
   },
   "entrypoints": [
     "static/css/main.045ee43d.css",
-    "static/js/main.3c824d5b.js"
+    "static/js/main.f2d8458c.js"
   ]
 }
