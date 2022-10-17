@@ -62,7 +62,7 @@ const Feed = () => {
             {user.name ? (
               <button
                 className="btn--primary"
-                onClick={() => (navigate("/posts/create"))}
+                onClick={() => navigate("/my-blog/posts/create")}
               >
                 Create Post
               </button>
